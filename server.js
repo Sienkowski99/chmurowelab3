@@ -11,11 +11,11 @@ app.post('/', (req, res) => {
 })
 
 app.put('/', (req, res) => {
-    res.send("put")
+    res.send(req.body)
 })
 
 app.delete('/', (req, res) => {
-    res.send("delete")
+    res.send(req.body)
 })
 
 app.listen(port, () => {
